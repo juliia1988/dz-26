@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03f13e1a-759c-4b3d-bcfd-79603fe8faa5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageobjects/AbstractPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageobjects/FirstPageWithButtons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageobjects/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/TextAvailableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/regression.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageobjects/EditPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageobjects/FormPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageobjects/SecondPageWithForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AddNewRecordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/EditRecordTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjects/FirstPageWithButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageobjects/FirstPageWithButtons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjects/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageobjects/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TextAvailableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TextAvailableTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/regression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/regression.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,26 +74,8 @@
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TextAvailableTest">
-    <configuration name="FirstPageWithButtons.getFinalText" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="dz-26" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pageobjects.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pageobjects" />
-      <option name="MAIN_CLASS_NAME" value="pageobjects.FirstPageWithButtons" />
-      <option name="METHOD_NAME" value="getFinalText" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TextAvailableTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AddNewRecordTest.testAddNewRecord">
+    <configuration name="AddNewRecordTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="dz-26" />
       <extension name="coverage">
         <pattern>
@@ -102,7 +84,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TextAvailableTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.AddNewRecordTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -110,7 +92,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextAvailableTest.testFirstButton" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AddNewRecordTest.testAddNewRecord" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="dz-26" />
       <extension name="coverage">
         <pattern>
@@ -119,8 +101,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TextAvailableTest" />
-      <option name="METHOD_NAME" value="testFirstButton" />
+      <option name="MAIN_CLASS_NAME" value="tests.AddNewRecordTest" />
+      <option name="METHOD_NAME" value="testAddNewRecord" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -128,7 +110,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextAvailableTest.testGetFinalTextPositive" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EditRecordTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="dz-26" />
       <extension name="coverage">
         <pattern>
@@ -137,8 +119,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TextAvailableTest" />
-      <option name="METHOD_NAME" value="testGetFinalTextPositive" />
+      <option name="MAIN_CLASS_NAME" value="tests.EditRecordTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EditRecordTest.testEditTheRecord" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="dz-26" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.EditRecordTest" />
+      <option name="METHOD_NAME" value="testEditTheRecord" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -146,7 +145,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextAvailableTest.testSecondButton" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TextAvailableTest.testClickOnButtonsToSeeTheText" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="dz-26" />
       <extension name="coverage">
         <pattern>
@@ -156,7 +155,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.TextAvailableTest" />
-      <option name="METHOD_NAME" value="testSecondButton" />
+      <option name="METHOD_NAME" value="testClickOnButtonsToSeeTheText" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -166,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TextAvailableTest" />
-        <item itemvalue="TestNG.TextAvailableTest.testFirstButton" />
-        <item itemvalue="TestNG.TextAvailableTest.testSecondButton" />
-        <item itemvalue="TestNG.TextAvailableTest.testGetFinalTextPositive" />
-        <item itemvalue="TestNG.FirstPageWithButtons.getFinalText" />
+        <item itemvalue="TestNG.AddNewRecordTest.testAddNewRecord" />
+        <item itemvalue="TestNG.EditRecordTest.testEditTheRecord" />
+        <item itemvalue="TestNG.EditRecordTest" />
+        <item itemvalue="TestNG.TextAvailableTest.testClickOnButtonsToSeeTheText" />
+        <item itemvalue="TestNG.AddNewRecordTest" />
       </list>
     </recent_temporary>
   </component>

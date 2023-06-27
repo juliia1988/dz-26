@@ -9,14 +9,8 @@ import java.util.List;
 import java.util.Map;
 
 public class MainPage extends AbstractPageObject {
-    private final By finalText = By.cssSelector("#dynamicClickMessage");
 
     public MainPage(WebDriver driver) {
         super(driver);
     }
-
-    public String getFinalText() {
-        return getElement(finalText).getText();
-    }
-
 }

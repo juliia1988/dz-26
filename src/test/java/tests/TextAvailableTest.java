@@ -1,23 +1,24 @@
 package tests;
 import io.qameta.allure.Description;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageobjects.FirstPageWithButtons;
-import pageobjects.MainPage;
 
 
-public class TextAvailableTest extends BaseTest{
+public class TextAvailableTest extends BaseTest {
 
     private final static String TEXT = "You have done a dynamic click";
 
 
     @Test
     @Description("The click on Buttons menu item")
-    public void testFirstButton() {
-       new FirstPageWithButtons(driver)
-               .clickOnButtonstoSeeTheText();
+    public void testClickOnButtonsToSeeTheText() {
+        String text = new FirstPageWithButtons(driver)
+                .clickOnButtonstoSeeTheText()
+                .getElement(By.cssSelector("#dynamicClickMessage")).getText().toString();
 
-        Assert.assertEquals(driver.getCurrentUrl(), "https://demoqa.com/buttons"
-                , "The logIn was not successful");
+        System.out.println(text);
+        Assert.assertEquals(text, TEXT, "Text is incorrect");
     }
 }
